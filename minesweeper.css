@@ -1,0 +1,10 @@
+#generateBtn {
+    width: 120px;
+    height: 60px;
+    background-color: white;
+}
+
+button:hover {
+    color:white;
+    box-shadow: 0 0 40px 40px gray inset;
+}
