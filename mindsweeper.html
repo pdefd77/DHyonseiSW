@@ -5,7 +5,22 @@
         <meta name="viewport" content="width=divcewidth, initial-scale=1.0">
         <link rel="stylesheet" href="minesweeper.css" />
         <title>지뢰찾기 게임 시작화면</title>
-
+        <script>
+            function main(a1, a2) {
+              var tag = "<table border='1'>";
+              var b1 = parseInt(a1);
+              var b2 = parseInt(a2);
+              for (j = 1; j <= b1; j++) {
+                tag += "<tr>";
+                for (i = 1; i <= b2; i++) {
+                  tag += "<td height='20px' width='20px'></td>";
+                }
+                tag += "</tr>";
+              }
+              tag += "</table>";
+              area.innerHTML = tag;
+            }
+        </script>
     </head>
     <body>
         가로 길이: <input type="number" id="txt1"><br/>
@@ -13,7 +28,8 @@
         지뢰 개수: <input type="number" id="txt3"><br/>
         시작 지뢰: <input type="checkbox" id="check1"><a title="체크 시 처음 누른 칸에는 항상 지뢰가 없습니다.">❓</a><br/>
         <br/>
-        <button id="generateBtn">생성하기</button>
+        <button onclick="main(txt1.value, txt2.value)" id="generateBtn" >생성하기</button>
         <hr/>
+        <div id="area"></div>
     </body>
 </html>
