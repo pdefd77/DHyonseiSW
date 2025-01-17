@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="week3_clock.css" />
+        <script src="week3_clock.js"></script>
+        <title>시계 메인</title>
+    </head>
+    <body>
+      <div class="square" id="batteryBox">배터리: <span id="battery"><script>batteryDisplay();</script></span>%</div>
+      <br>
+      현재 시간<div class="square" id="timeBox"><span id="time"><script>timeDisplay();</script></span></div>
+      <br>
+      알람현황<div class="square" id="alarmBox"><span id="alarm"><script>alarmDisplay('-');</script></span></div>
+      <br>
+      <div>알람
+        <input type="number" id="hour" placeholder="시" oninput="hourCheck()">
+        <input type="number" id="minute" placeholder="분" oninput="minuteCheck()">
+        <input type="number" id="second" placeholder="초" oninput="secondCheck()">
+        <button onclick="alarmSet()">추가</button>
+      </div>
+    </body>
+</html>

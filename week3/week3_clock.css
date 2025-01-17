@@ -1,0 +1,25 @@
+input {
+    max-width: 30px;
+    text-align: right;
+}
+
+.square {
+    border: 1px solid black;
+    max-width: 150px;
+    padding: 10px 30px 10px 30px;
+    text-align: center;
+}
+
+#timeBox {
+    background-color: floralwhite;
+}
+
+#alarmBox {
+    background-color: beige;
+    padding: 0px 30px 0px 30px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 30px;
+}
