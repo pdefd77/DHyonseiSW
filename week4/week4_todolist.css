@@ -1,0 +1,53 @@
+#todoInput {
+    width: 50%;
+    height: 20px;
+}
+
+#todoButton {
+    background-color: black;
+    color: white;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+}
+
+#todoList {
+    padding: 0px 0px 0px 10px;
+}
+
+#todoList li {
+    display: flex;
+    background-color: peru;
+    color: black;
+    width: 50%;
+    height: 30px;
+    margin: 10px 0px 0px 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+#todoList input {
+    display: flex;
+    width: 20px;
+    height: 20px;
+}
+
+#todoList span {
+    display: flex;
+}
+
+#todoList span.check {
+    text-decoration: line-through;
+    color:gray;
+}
+
+#todoList button {
+    display: flex;
+    margin-left: auto;
+    text-decoration: none;
+    justify-content: center;
+    font-size: large;
+    color: red;
+    width: 30px;
+    height: 30px;
+}

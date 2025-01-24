@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="week4_register.css" />
+        <script src="week4_register.js"></script>
+        <title>로그인</title>
+    </head>
+    <body>
+      <table id="layout">
+        <tr>
+            <th class="layoutInput"><input type="text" class="accInput" id="idInput" placeholder="아이디"></th>
+            <th rowspan='2'><button id="loginButton" onclick="login()">로그인</button></th>
+        </tr>
+        <tr>
+            <th class="layoutInput"><input type="password" class="accInput" id="pwInput" placeholder="비밀번호"></th>
+            <!--<th></th>-->
+        </tr>
+      </table>
+      <button id="gotoRegisterButton" onclick="window.open('week4_register2.html')">회원가입하기</button>
+      <!--이 아래는 테스트용-->
+      <br><br><br><br><br>
+      <button onclick="reset()">저장된 계정 전부 삭제(테스트용)</button>
+</html>

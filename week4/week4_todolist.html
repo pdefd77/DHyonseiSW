@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="week4_todolist.css" />
+        <script src="week4_todolist.js"></script>
+        <title>할 일 리스트</title>
+    </head>
+    <body>
+      <div>
+        <p>일정 목록</p><p></p>
+      </div>
+      <div>
+        <input type="text" id="todoInput" placeholder="일정" onkeydown="enterCheck()">
+        <button id="todoButton" onclick="todoAdd()">+</button>
+      </div>
+      <hr>
+      <div>
+        <ul id="todoList">
+
+        </ul>
+      </div>
+      <hr>
+      <div>
+        <button onclick="todoDeleteAll();">전체 일정 삭제</button> <button onclick="todoDeleteCheck();">완료된 일정 삭제</button>
+      </div>
+    </body>
+</html>
